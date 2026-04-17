@@ -31,7 +31,7 @@
     color: var(--charcoal);
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 17px; /* ↑ was 16px */
+    font-size: 17px;
     line-height: 1.8;
     overflow-x: hidden;
   }
@@ -119,8 +119,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background:
-      radial-gradient(ellipse 60% 40% at 50% 60%, rgba(184,146,42,0.07) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 40% at 50% 60%, rgba(184,146,42,0.07) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -154,10 +153,7 @@
     animation: fadeUp 0.9s ease forwards 0.4s;
   }
 
-  .hero-title em {
-    font-style: italic;
-    color: var(--gold);
-  }
+  .hero-title em { font-style: italic; color: var(--gold); }
 
   .hero-tagline {
     font-family: 'Cormorant Garamond', serif;
@@ -195,10 +191,7 @@
     animation: fadeUp 0.9s ease forwards 0.9s;
   }
 
-  .hero-cta:hover {
-    background: var(--gold);
-    color: var(--ivory);
-  }
+  .hero-cta:hover { background: var(--gold); color: var(--ivory); }
 
   .scroll-indicator {
     position: absolute;
@@ -230,10 +223,7 @@
   /* ── SECTION BASE ── */
   section { padding: 100px 40px; }
 
-  .section-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+  .section-inner { max-width: 1000px; margin: 0 auto; }
 
   .section-eyebrow {
     font-family: 'Jost', sans-serif;
@@ -254,10 +244,7 @@
     margin-bottom: 32px;
   }
 
-  .section-title em {
-    font-style: italic;
-    color: var(--gold);
-  }
+  .section-title em { font-style: italic; color: var(--gold); }
 
   .gold-rule {
     width: 40px;
@@ -283,7 +270,7 @@
   .about-body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 16px; /* ↑ was 15px */
+    font-size: 16px;
     color: var(--charcoal-mid);
     line-height: 1.9;
   }
@@ -297,10 +284,7 @@
     padding-top: 8px;
   }
 
-  .stat-item {
-    border-left: 1.5px solid var(--gold);
-    padding-left: 24px;
-  }
+  .stat-item { border-left: 1.5px solid var(--gold); padding-left: 24px; }
 
   .stat-number {
     font-family: 'Cormorant Garamond', serif;
@@ -318,6 +302,103 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--charcoal-muted);
+  }
+
+  /* ── FOUNDER ── */
+  #founder {
+    background: var(--ivory-dark);
+    border-top: 0.5px solid var(--border);
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .founder-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .founder-identity {
+    padding-top: 4px;
+  }
+
+  .founder-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(28px, 4vw, 42px);
+    color: var(--charcoal);
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  .founder-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+  }
+
+  .founder-divider {
+    width: 30px;
+    height: 0.5px;
+    background: var(--gold);
+    margin-bottom: 28px;
+  }
+
+  .founder-languages {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .founder-lang-label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--charcoal-muted);
+    margin-bottom: 4px;
+  }
+
+  .founder-lang-list {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--charcoal-mid);
+    line-height: 1.9;
+  }
+
+  .founder-bio {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--charcoal-mid);
+    line-height: 1.9;
+  }
+
+  .founder-bio p + p { margin-top: 20px; }
+
+  .founder-credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .credential-tag {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 0.5px solid var(--border);
+    padding: 6px 14px;
+    background: rgba(184,146,42,0.04);
   }
 
   /* ── SERVICES ── */
@@ -374,7 +455,7 @@
   .service-body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 15px; /* ↑ was 14px */
+    font-size: 15px;
     color: var(--charcoal-muted);
     line-height: 1.8;
   }
@@ -386,7 +467,6 @@
   }
 
   #contact .section-eyebrow { color: var(--gold-light); }
-
   #contact .section-title { color: var(--ivory); }
 
   .contact-grid {
@@ -399,7 +479,7 @@
   .contact-intro {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 16px; /* ↑ was 15px */
+    font-size: 16px;
     color: rgba(250,247,240,0.65);
     line-height: 1.9;
     margin-bottom: 40px;
@@ -407,11 +487,7 @@
 
   .contact-details { display: flex; flex-direction: column; gap: 20px; }
 
-  .contact-item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
+  .contact-item { display: flex; flex-direction: column; gap: 4px; }
 
   .contact-item-label {
     font-family: 'Jost', sans-serif;
@@ -425,14 +501,12 @@
   .contact-item-value {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 15px; /* ↑ was 14px */
+    font-size: 15px;
     color: var(--ivory);
     line-height: 1.5;
   }
 
-  /* Form */
   .contact-form { display: flex; flex-direction: column; gap: 20px; }
-
   .form-group { display: flex; flex-direction: column; gap: 8px; }
 
   .form-label {
@@ -450,7 +524,7 @@
     color: var(--ivory);
     font-family: 'Jost', sans-serif;
     font-weight: 300;
-    font-size: 15px; /* ↑ was 14px */
+    font-size: 15px;
     padding: 14px 18px;
     outline: none;
     transition: border-color 0.3s;
@@ -458,14 +532,8 @@
     resize: none;
   }
 
-  .form-input::placeholder, .form-textarea::placeholder {
-    color: rgba(250,247,240,0.25);
-  }
-
-  .form-input:focus, .form-textarea:focus {
-    border-color: var(--gold);
-  }
-
+  .form-input::placeholder, .form-textarea::placeholder { color: rgba(250,247,240,0.25); }
+  .form-input:focus, .form-textarea:focus { border-color: var(--gold); }
   .form-textarea { height: 130px; }
 
   .form-submit {
@@ -483,10 +551,7 @@
     transition: all 0.3s ease;
   }
 
-  .form-submit:hover {
-    background: var(--gold);
-    color: var(--charcoal);
-  }
+  .form-submit:hover { background: var(--gold); color: var(--charcoal); }
 
   /* ── FOOTER ── */
   footer {
@@ -532,7 +597,7 @@
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
     section { padding: 70px 24px; }
-    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .about-grid, .contact-grid, .founder-grid { grid-template-columns: 1fr; gap: 48px; }
     .services-grid { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 10px; text-align: center; }
   }
@@ -559,6 +624,7 @@
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#founder">Our Founder</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -567,7 +633,6 @@
 <!-- HERO -->
 <section class="hero">
   <p class="hero-eyebrow">Kuala Lumpur &nbsp;·&nbsp; Asia Pacific</p>
-
   <div class="hero-logo-icon">
     <svg viewBox="0 0 80 50" width="80" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="8" y1="38" x2="72" y2="38" stroke="#1A1A1A" stroke-width="0.8"/>
@@ -579,12 +644,10 @@
       <line x1="64" y1="28" x2="70" y2="25" stroke="#B8922A" stroke-width="1.4" stroke-linecap="round"/>
     </svg>
   </div>
-
   <h1 class="hero-title">Bridging <em>Markets.</em><br/>Building Growth.</h1>
   <p class="hero-tagline">Your strategic partner in FMCG across Asia.</p>
   <div class="hero-divider"></div>
   <a href="#about" class="hero-cta">Discover More</a>
-
   <div class="scroll-indicator">
     <div class="scroll-line"></div>
     <span>Scroll</span>
@@ -611,11 +674,50 @@
         </div>
         <div class="stat-item">
           <div class="stat-number">FMCG</div>
-          <div class="stat-label">Specialist focus — consumer goods, food & beverage, personal care</div>
+          <div class="stat-label">Specialist focus — consumer goods, food &amp; beverage, personal care</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">KL</div>
           <div class="stat-label">Headquartered in Kuala Lumpur — at the heart of Southeast Asia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder">
+  <div class="section-inner">
+    <p class="section-eyebrow">The Person Behind It</p>
+    <h2 class="section-title">Built on over a decade of<br/><em>real market experience</em></h2>
+    <div class="gold-rule"></div>
+    <div class="founder-grid">
+      <div class="founder-identity">
+        <div class="founder-name">Adeline<br/>Tang</div>
+        <div class="founder-title">Founder, Hinode East Enterprise</div>
+        <div class="founder-divider"></div>
+        <div class="founder-languages">
+          <div class="founder-lang-label">Languages</div>
+          <div class="founder-lang-list">
+            Mandarin &nbsp;·&nbsp; Cantonese<br/>
+            English &nbsp;·&nbsp; Malay<br/>
+            + Several dialects
+          </div>
+        </div>
+      </div>
+      <div class="founder-bio">
+        <p>Adeline Tang brings over a decade of hands-on experience in FMCG distribution and trade across Asia. As co-founder of DS Borneo Trading — established in 2013 — she built one of Malaysia's leading premium food and beverage import and distribution businesses from the ground up, supplying some of the country's most discerning retail names, international hotel chains, and fine dining restaurants across East and West Malaysia.</p>
+        <p>Over those years, Adeline developed deep expertise in navigating ASEAN market entry, import compliance, and retail ranging — while building a global supplier network spanning ASEAN, Europe, the United Kingdom, the United States, Australia, and Japan across ambient, chilled, and frozen product categories.</p>
+        <p>Having grown up in Australia, Adeline brings a natural understanding of the Australian market and its FMCG landscape — a genuine edge when sourcing Australian products for Asian markets or supporting Australian brands looking to expand into the region.</p>
+        <p>Fluent across multiple languages and deeply familiar with the cultural nuances that shape commerce across Asia, Adeline founded Hinode East to bring this accumulated knowledge to a wider range of clients — helping brands, manufacturers, and retailers navigate markets with confidence, and manage the risks that come with operating across complex, fast-moving regions.</p>
+        <div class="founder-credentials">
+          <span class="credential-tag">ASEAN Markets</span>
+          <span class="credential-tag">Australia</span>
+          <span class="credential-tag">Global Sourcing</span>
+          <span class="credential-tag">Import &amp; Compliance</span>
+          <span class="credential-tag">Retail Distribution</span>
+          <span class="credential-tag">HORECA</span>
+          <span class="credential-tag">10+ Years FMCG</span>
         </div>
       </div>
     </div>
@@ -670,6 +772,12 @@
         <div class="service-number">07</div>
         <h3 class="service-title">Freight &amp; Logistics Coordination</h3>
         <p class="service-body">We help clients move goods reliably across the globe — coordinating road, air, and sea freight through our network of trusted freight partners. From a single shipment to full end-to-end logistics management, we ensure your products reach their destination on time and at the right cost.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">08</div>
+        <h3 class="service-title">Risk Advisory &amp; Management</h3>
+        <p class="service-body">Entering new markets and managing cross-border supply chains carries real risk — regulatory, commercial, and operational. We help clients identify, assess, and manage these risks before they become costly problems. From product compliance gaps and market entry hazards to supplier reliability and geopolitical supply chain exposure, we bring honest, experienced analysis so you can move forward with confidence.</p>
       </div>
 
     </div>
