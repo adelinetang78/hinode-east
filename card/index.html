@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adeline Tang — Director, Hinode East Enterprise</title>
+<meta name="description" content="Adeline Tang, Director of Hinode East Enterprise. FMCG consultancy in Kuala Lumpur: ASEAN market entry, sourcing, compliance and logistics.">
+<link rel="canonical" href="https://hinodeeast.com/card/">
+<meta name="theme-color" content="#F5F0E8">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Adeline Tang — Director, Hinode East Enterprise">
+<meta property="og:description" content="FMCG consultancy in Kuala Lumpur: ASEAN market entry, sourcing, compliance and logistics.">
+<meta property="og:url" content="https://hinodeeast.com/card/">
+
+<style>
+  :root{
+    --cream:#F5F0E8;
+    --cream-deep:#EDE6DA;
+    --gold:#B8922A;
+    --gold-soft:rgba(184,146,42,.28);
+    --charcoal:#1A1A1A;
+    --charcoal-60:rgba(26,26,26,.60);
+    --charcoal-40:rgba(26,26,26,.40);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    background:var(--cream);
+    color:var(--charcoal);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:44px 22px calc(40px + env(safe-area-inset-bottom));
+  }
+
+  .card{width:100%;max-width:400px;text-align:center}
+
+  /* ---- rising sun mark: the signature ---- */
+  .mark{width:140px;height:78px;margin:0 auto 30px;display:block;overflow:visible}
+  .mark .sun{
+    transform-origin:66px 62px;
+    animation:rise 1.15s cubic-bezier(.22,.9,.3,1) both;
+  }
+  .mark .ray{animation:fade .7s ease-out both}
+  .mark .ray:nth-of-type(2){animation-delay:.62s}
+  .mark .ray:nth-of-type(3){animation-delay:.74s}
+  .mark .ray:nth-of-type(4){animation-delay:.86s}
+
+  @keyframes rise{
+    from{transform:translateY(26px) scaleY(.45);opacity:0}
+    to{transform:none;opacity:1}
+  }
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:.9;transform:none}}
+
+  /* ---- identity ---- */
+  .name{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:38px;
+    line-height:1.12;
+    letter-spacing:-.015em;
+    font-weight:700;
+  }
+  .role{
+    margin-top:11px;
+    font-size:13px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .org{
+    margin-top:7px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:17px;
+    letter-spacing:.06em;
+    color:var(--charcoal-60);
+  }
+  .tagline{
+    margin-top:20px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-style:italic;
+    font-size:16px;
+    color:var(--charcoal-60);
+  }
+
+  .rule{
+    width:52px;height:1px;
+    background:var(--gold);
+    margin:28px auto;
+    opacity:.6;
+  }
+
+  /* ---- actions ---- */
+  .save{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    width:100%;
+    padding:18px;
+    background:var(--charcoal);
+    color:var(--cream);
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    border:1px solid var(--charcoal);
+    transition:background .18s ease,color .18s ease;
+  }
+  .save:hover,.save:focus-visible{background:var(--gold);border-color:var(--gold);color:#fff}
+
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:10px;
+  }
+  .act{
+    display:flex;flex-direction:column;align-items:center;gap:7px;
+    padding:17px 8px;
+    background:var(--cream-deep);
+    border:1px solid var(--gold-soft);
+    color:var(--charcoal);
+    text-decoration:none;
+    transition:border-color .18s ease,background .18s ease;
+  }
+  .act:hover,.act:focus-visible{border-color:var(--gold);background:#fff}
+  .act svg{width:21px;height:21px;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .act span{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--charcoal-60);font-weight:600}
+  .act.wide{grid-column:1 / -1;flex-direction:row;gap:11px;padding:15px}
+
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  /* ---- services ---- */
+  .services{
+    margin-top:34px;
+    font-size:11px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--charcoal-40);
+    line-height:2.1;
+  }
+  .services b{color:var(--gold);font-weight:400;margin:0 5px}
+
+  .foot{
+    margin-top:30px;
+    padding-top:22px;
+    border-top:1px solid var(--gold-soft);
+    font-size:11px;
+    letter-spacing:.06em;
+    color:var(--charcoal-40);
+    line-height:1.9;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .mark .sun,.mark .ray{animation:none;opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<main class="card">
+
+  <svg class="mark" viewBox="0 17 132 74" aria-hidden="true">
+    <path class="sun" d="M26 62 A40 40 0 0 1 106 62" stroke="#B8922A" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <line class="ray" x1="8"  y1="70" x2="124" y2="70" stroke="#B8922A" stroke-width="2.6" stroke-linecap="round"/>
+    <line class="ray" x1="24" y1="78" x2="108" y2="78" stroke="#B8922A" stroke-width="2.6" stroke-linecap="round"/>
+    <line class="ray" x1="44" y1="86" x2="88"  y2="86" stroke="#B8922A" stroke-width="2.6" stroke-linecap="round"/>
+  </svg>
+
+  <h1 class="name">Adeline Tang</h1>
+  <p class="role">Director</p>
+  <p class="org">Hinode East Enterprise</p>
+  <p class="tagline">Bridging markets. Building growth.</p>
+
+  <div class="rule"></div>
+
+  <a class="save" href="/card/adeline-tang.vcf">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/>
+    </svg>
+    Save contact
+  </a>
+
+  <div class="grid">
+    <a class="act" href="tel:+60172055877">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v2.6a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 3.7 2 2 0 0 1 4.1 1.5h2.6a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.8 9.3a16 16 0 0 0 6 6l1.2-1.1a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7 2 2 0 0 1 1.7 2z"/></svg>
+      <span>Call</span>
+    </a>
+
+    <a class="act" href="https://wa.me/60172055877">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="act" href="mailto:adeline@hinodeeast.com">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="1.5"/><path d="m2.5 6 9.5 7 9.5-7"/></svg>
+      <span>Email</span>
+    </a>
+
+    <a class="act" href="https://hinodeeast.com">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4"/><path d="M12 2.8a15 15 0 0 1 0 18.4 15 15 0 0 1 0-18.4z"/></svg>
+      <span>Website</span>
+    </a>
+  </div>
+
+  <p class="services">
+    ASEAN market entry <b>·</b> Import compliance<br>
+    Supplier sourcing <b>·</b> Retail range development<br>
+    Freight &amp; logistics
+  </p>
+
+  <p class="foot">
+    Kuala Lumpur, Malaysia<br>
+    Reg. 202403329277
+  </p>
+
+</main>
+</body>
+</html>
