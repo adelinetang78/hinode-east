@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Tang;Adeline;;;
+FN:Adeline Tang
+ORG:Hinode East Enterprise
+TITLE:Director
+TEL;TYPE=CELL,VOICE:+60172055877
+EMAIL;TYPE=INTERNET,WORK:adeline@hinodeeast.com
+URL:https://hinodeeast.com
+ADR;TYPE=WORK:;;;Kuala Lumpur;;;Malaysia
+END:VCARD
